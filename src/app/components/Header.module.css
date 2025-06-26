@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: var(--color-gray-100);
+}
+
+.nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
