@@ -300,7 +300,8 @@
   top: auto; /* Reset top positioning */
   left: auto; /* Reset left positioning */
   width: auto; /* Let width be determined by content */
-  height: 100%; /* Take full height of parent */
+  height: calc(100% - 10px); /* Leave vertical space for hover highlight */
+  margin: 5px 0; /* vertical spacing around each nav item */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,9 +512,10 @@
 
 .navItem {
   cursor: pointer;
-  transition: background 0.2s, padding 0.2s; /* smooth grow */
-  padding: 1px 1px;  /* example values, use your base values */
-  border-radius: var(--br-100);  
+  transition: background 0.2s, padding 0.2s;
+  padding: 0 20px;
+  border-radius: var(--br-100);
+  overflow: hidden;
 }
 
 .navItem:hover {
@@ -523,6 +525,7 @@
     var(--color-darkslateblue)
   );
   border-radius: var(--br-100);
+  color: var(--color-white);
 }
 
 .navLink {
