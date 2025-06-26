@@ -4,7 +4,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./hem.module.css";
 import Spline from '@splinetool/react-spline';
-import Header from "../components/Header";
 
 const Hem: NextPage = () => {
   return (
@@ -129,7 +128,6 @@ const Hem: NextPage = () => {
       <div className={styles.rectangleDiv} />
       <div className={styles.hemChild8} />
       <div className={styles.hemChild9} />
-      <Header />
       <div className={styles.geChatbotenTillgngContainer}>
         <p className={styles.allKunskap}>Ge chatboten tillgång</p>
         <p className={styles.allKunskap}>till dina källor – databaser,</p>

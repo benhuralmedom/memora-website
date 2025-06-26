@@ -5,6 +5,7 @@
   left: 111px;
   font-size: 24px;
   text-align: left;
+  z-index: 1000;
 }
 
 .component2Child {
@@ -81,6 +82,7 @@
   display: flex; /* Use flexbox for better alignment */
   align-items: center; /* Center items vertically */
   justify-content: space-around; /* Distribute items evenly */
+  z-index: 1000;
 }
 
 .component21,
