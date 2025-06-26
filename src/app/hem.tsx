@@ -1,19 +1,26 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./hem.module.css";
+import Spline from '@splinetool/react-spline';
+import Link from "next/link";
 
 const Hem: NextPage = () => {
   return (
     <div className={styles.hem}>
-      <div className={styles.wrapperModernGeometricBlack}>
+      {/* <div className={styles.wrapperModernGeometricBlack}>
         <Image
           className={styles.modernGeometricBlackBusinesIcon}
-          width={1605.2}
-          height={1605.2}
+          width={2053.746}
+          height={2053.746}
           sizes="100vw"
           alt=""
-          src="/moderngeometricblackbusinessbackground-3@2x.png"
+          src="/modern-geometric-black-business-background 1 (1).png"
+          quality={100}
+          priority
         />
+      </div> */}
+      <div className={styles.splineLeft}>
+        <Spline scene="https://prod.spline.design/l6fJ31p8NzHsHjN2/scene.splinecode" />
       </div>
       <div className={styles.wrapperModernGeometricBlack1}>
         <Image
@@ -136,20 +143,20 @@ const Hem: NextPage = () => {
       <div className={styles.sFungerarDet}>Så fungerar det</div>
       <div className={styles.component2}>
         <div className={styles.component2Child} />
-        <div className={styles.component21}>
-          <div className={styles.omOss}>Hem</div>
+        <div className={`${styles.component21} ${styles.navItem}`}>
+          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Hem</Link>
         </div>
-        <div className={styles.component3}>
-          <div className={styles.omOss}>Om oss</div>
+        <div className={`${styles.component3} ${styles.navItem}`}>
+          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Om oss</Link>
         </div>
-        <div className={styles.component4}>
-          <div className={styles.omOss}>Kontakt</div>
+        <div className={`${styles.component4} ${styles.navItem}`}>
+          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Kontakt</Link>
         </div>
-        <div className={styles.component5}>
-          <div className={styles.omOss}>Priser</div>
+        <div className={`${styles.component5} ${styles.navItem}`}>
+          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Priser</Link>
         </div>
-        <div className={styles.component1}>
-          <div className={styles.omOss}>Funktioner</div>
+        <div className={`${styles.component1} ${styles.navItem}`}>
+          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Funktioner</Link>
         </div>
       </div>
       <Image
@@ -225,11 +232,13 @@ const Hem: NextPage = () => {
       <div className={styles.hemChild12} />
       <div className={styles.hemChild13} />
       <div className={styles.hemChild14} />
-      <div className={styles.component7}>
-        <div className={styles.bokaDemo}>BOKA DEMO</div>
-      </div>
-      <div className={styles.component8}>
-        <div className={styles.seFunktioner}>SE FUNKTIONER</div>
+      <div className={styles.buttonContainer}>
+        <div className={styles.component7}>
+          <div className={styles.bokaDemo}>BOKA DEMO</div>
+        </div>
+        <div className={styles.component8}>
+          <div className={styles.seFunktioner}>SE FUNKTIONER</div>
+        </div>
       </div>
     </div>
   );
