@@ -1,4 +1,5 @@
 import "./global.css";
+import Header from "../components/Header";
 
 export const metadata = {
   title: `Memora`,
@@ -11,7 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

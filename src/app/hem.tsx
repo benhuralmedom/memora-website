@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./hem.module.css";
 import Spline from '@splinetool/react-spline';
-import Link from "next/link";
+import Header from "../components/Header";
 
 const Hem: NextPage = () => {
   return (
@@ -129,7 +129,7 @@ const Hem: NextPage = () => {
       <div className={styles.rectangleDiv} />
       <div className={styles.hemChild8} />
       <div className={styles.hemChild9} />
-      <b className={styles.mEM}>{`M E M O R A `}</b>
+      <Header />
       <div className={styles.geChatbotenTillgngContainer}>
         <p className={styles.allKunskap}>Ge chatboten tillgång</p>
         <p className={styles.allKunskap}>till dina källor – databaser,</p>
@@ -143,24 +143,6 @@ const Hem: NextPage = () => {
         OCR, NLP-preprocessing och vektorindex skapas sömlöst i bakgrunden.
       </div>
       <div className={styles.sFungerarDet}>Så fungerar det</div>
-      <div className={styles.component2}>
-        <div className={styles.component2Child} />
-        <div className={`${styles.component21} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Hem</Link>
-        </div>
-        <div className={`${styles.component3} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Om oss</Link>
-        </div>
-        <div className={`${styles.component4} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Kontakt</Link>
-        </div>
-        <div className={`${styles.component5} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Priser</Link>
-        </div>
-        <div className={`${styles.component1} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Funktioner</Link>
-        </div>
-      </div>
       <Image
         className={styles.dRenderingCuteRobotIcon2}
         width={346.5}
