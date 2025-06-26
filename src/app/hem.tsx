@@ -1,3 +1,5 @@
+"use client";
+
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./hem.module.css";
