@@ -23,101 +23,19 @@ const Hem: NextPage = () => {
       <div className={styles.splineLeft}>
         <Spline scene="https://prod.spline.design/l6fJ31p8NzHsHjN2/scene.splinecode" />
       </div>
-      <div className={styles.wrapperModernGeometricBlack1}>
-        <Image
-          className={styles.modernGeometricBlackBusinesIcon1}
-          width={2650.2}
-          height={2650.2}
-          sizes="100vw"
-          alt=""
-          src="/moderngeometricblackbusinessbackground-3@2x.png"
-        />
-      </div>
       <div className={styles.hemChild} />
       <div className={styles.hemItem} />
-      <Image
-        className={styles.hemInner}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.groupIcon}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild1}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild2}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild3}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild4}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild5}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild6}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <Image
-        className={styles.hemChild7}
-        width={88.1}
-        height={92.8}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
       <div className={styles.ellipseDiv} />
       <b className={styles.allKunskapDirektContainer}>
-        <p className={styles.allKunskap}>All kunskap,</p>
-        <p className={styles.allKunskap}>direkt i chatten</p>
+        <p className={styles.allKunskap}>All of Your Companys Knowledge</p>
+        <p className={styles.allKunskap}>in One Interface</p>
       </b>
       <div className={styles.anslutDinaDokumentContainer}>
         <p className={styles.allKunskap}>
-          Anslut dina dokument och få svar med RAG-drivna
+          AI-powered knowledge assistant.
         </p>
         <p className={styles.allKunskap}>
-          AI-chatbotar – smartare, snabbare och säkrare.
+          Instantly search, retrieve, and interact with internal data (like documents, wikis, databases) securely.
         </p>
       </div>
       <div className={styles.vlkommenTillFramtiden}>
@@ -190,24 +108,6 @@ const Hem: NextPage = () => {
           sizes="100vw"
           alt=""
           src="/icon2.svg"
-        />
-      </div>
-      <Image
-        className={styles.modernGeometricBlackBusinesIcon2}
-        width={985}
-        height={985}
-        sizes="100vw"
-        alt=""
-        src="/moderngeometricblackbusinessbackground-3@2x.png"
-      />
-      <div className={styles.wrapperModernGeometricBlack2}>
-        <Image
-          className={styles.modernGeometricBlackBusinesIcon3}
-          width={887.1}
-          height={887.1}
-          sizes="100vw"
-          alt=""
-          src="/moderngeometricblackbusinessbackground-3@2x.png"
         />
       </div>
       <div className={styles.hemChild11} />
