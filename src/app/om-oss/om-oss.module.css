@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 978px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  text-align: left;
+  font-size: var(--font-size-18);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.backgroundEllipse {
+  position: absolute;
+  top: -931px;
+  left: -303px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(88, 117, 157, 0.6), rgba(31, 41, 55, 0));
+  width: 1998px;
+  height: 1862px;
+}
+
+.mission {
+  position: absolute;
+  top: 253px;
+  left: 61px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.description {
+  position: absolute;
+  top: 501px;
+  left: 71px;
+  font-size: 32px;
+  color: var(--color-gray-100);
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 293px;
+  left: -51px;
+  width: 1707.1px;
+  height: 1190.5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(1);
+}
