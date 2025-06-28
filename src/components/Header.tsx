@@ -10,19 +10,19 @@ export default function Header() {
       <div className={styles.component2}>
         <div className={styles.component2Child} />
         <div className={`${styles.component21} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Hem</Link>
+          <Link href="/" className={`${styles.omOss} ${styles.navLink}`}>Hem</Link>
         </div>
         <div className={`${styles.component3} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Om oss</Link>
+          <Link href="/om-oss" className={`${styles.omOss} ${styles.navLink}`}>Om oss</Link>
         </div>
         <div className={`${styles.component4} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Kontakt</Link>
+          <Link href="/kontakt" className={`${styles.omOss} ${styles.navLink}`}>Kontakt</Link>
         </div>
         <div className={`${styles.component5} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Priser</Link>
+          <Link href="/priser" className={`${styles.omOss} ${styles.navLink}`}>Priser</Link>
         </div>
         <div className={`${styles.component1} ${styles.navItem}`}>
-          <Link href="#" className={`${styles.omOss} ${styles.navLink}`}>Funktioner</Link>
+          <Link href="/funktioner" className={`${styles.omOss} ${styles.navLink}`}>Funktioner</Link>
         </div>
       </div>
     </>

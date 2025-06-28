@@ -35,7 +35,7 @@ const Hem: NextPage = () => {
         <div className={styles.featureItem}>
           <div>
             <div className={styles.featureName}>AI-powered search & Q&A</div>
-            <div className={styles.featureDesc}>Ask in natural language, whether it's a quick lookup or a complex query. Fully tailored to your organization.</div>
+            <div className={styles.featureDesc}>Ask in natural language, whether it&apos;s a quick lookup or a complex query. Fully tailored to your organization.</div>
           </div>
         </div>
         <div className={styles.featuresSection}>
