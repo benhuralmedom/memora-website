@@ -1,0 +1,110 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 1200px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+}
+
+.backgroundEllipse {
+  position: absolute;
+  top: -931px;
+  left: -303px;
+  width: 1998px;
+  height: 1862px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(88, 117, 157, 0.6), rgba(31, 41, 55, 0));
+  z-index: -1;
+}
+
+.heading {
+  margin: 253px 0 0 122px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: var(--font-josefin-sans);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 359px;
+  min-height: 500px;
+  border-radius: 20px;
+  padding: 48px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardStarter {
+  background: linear-gradient(90deg, #fffdfd, #f1f1f1);
+  border: 0.3px solid #1d69e7;
+}
+
+.cardProfessional {
+  background: linear-gradient(90deg, #e8f1ff, #9fc3ff);
+  border: 0.3px solid #ffffff;
+}
+
+.cardEnterprise {
+  background: linear-gradient(90deg, #5e5750, #2c1d10);
+  border: 0.3px solid #ffffff;
+  color: var(--color-white);
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-josefin-sans);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-family: var(--font-josefin-sans);
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  font-weight: 300;
+}
+
+.features li {
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  margin-top: auto;
+  padding: 16px 32px;
+  border-radius: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #80b0ff, #1d69e7);
+  color: var(--color-white);
+  border: none;
+  font-size: 20px;
+  font-family: var(--font-josefin-sans);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.robotImage {
+  width: 237px;
+  height: 237px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
