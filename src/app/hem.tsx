@@ -11,10 +11,10 @@ const Hem: NextPage = () => {
       <section className={styles.heroSection}>
         <div className={styles.textContainer}>
           <h1 className={styles.titleContainer}>
-              All Company Knowledge.<br />
-              One Interface.
+            All Company Knowledge.<br />
+            One Interface.
           </h1>
-          <p className={styles.titleContainerContainer}>
+          <p className={styles.subTitleContainer}>
             Memora is an AI that knows everything about your company - and feeds you answers in real time.
           </p>
           <div className={styles.buttonContainer}>
@@ -30,11 +30,11 @@ const Hem: NextPage = () => {
           <Spline scene="https://prod.spline.design/l6fJ31p8NzHsHjN2/scene.splinecode" />
         </div>
       </section>
-      <div className={styles.vlkommenTillFramtiden}>
+      <div className={styles.benefit}>
         Teams waste 30% of their time searching for information.<br />
         Memora gives that time back.
       </div>
-      <div className={styles.sFungerarDet}>Key Features</div>
+      <div className={styles.keyFeatures}>Key Features</div>
       <KeyFeatures />
     </div>
   );

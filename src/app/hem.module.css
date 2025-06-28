@@ -1,3 +1,30 @@
+/* New responsive hero layout */
+
+.hem {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-36);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.heroSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8.5% 7.5% 20%;
+  position: relative;
+}
+
+.textContainer {
+  flex: 1 1 700px;
+  max-width: 700px;
+}
+
 .titleContainer {
   font-size: 55px;
   color: var(--color-gray-100);
@@ -7,29 +34,16 @@
 .subTitleContainer {
   font-size: var(--font-size-32);
   color: var(--color-gray-100);
+  text-align: left;
   margin-bottom: 60px;
-  max-width: 550px;
 }
-.vlkommenTillFramtiden {
-  font-size: 35px;
-  text-align: center;
-  margin: 100px auto;
-  max-width: 800px;
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 100px;
 }
-.sFungerarDet {
-  font-size: 40px;
-  font-weight: 600;
-  color: var(--color-gray-100);
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
-}
-.bokaDemo {
-  position: absolute;
-  top: 25px;
-  left: 74px;
-  font-weight: 600;
-}
+
 .component7 {
   position: relative;
   border-radius: var(--br-100);
@@ -44,12 +58,7 @@
   font-size: var(--font-size-16);
   color: var(--color-white);
 }
-.seFunktioner {
-  position: absolute;
-  top: 25px;
-  left: 59px;
-  font-weight: 600;
-}
+
 .component8 {
   position: relative;
   border-radius: var(--br-100);
@@ -62,22 +71,18 @@
   color: var(--color-darkslateblue);
 }
 
-.buttonContainer {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
+.bokaDemo {
+  position: absolute;
+  top: 25px;
+  left: 74px;
+  font-weight: 600;
 }
 
-.hem {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  height: auto;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-36);
-  color: var(--color-black);
-  font-family: var(--font-inter);
+.seFunktioner {
+  position: absolute;
+  top: 25px;
+  left: 59px;
+  font-weight: 600;
 }
 
 .splineLeft {
@@ -88,17 +93,17 @@
   margin-top: 0;
 }
 
-/* New responsive hero layout */
-.heroSection {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8.5% 7.5% 20%;
-  position: relative;
+.benefit {
+  font-size: 35px;
+  text-align: center;
+  margin: 100px auto;
+  max-width: 1000px;
 }
-
-.textContainer {
-  flex: 1 1 700px;
-  max-width: 700px;
+.keyFeatures {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-gray-100);
+  text-align: center;
+  margin-top: 800px;
+  margin-bottom: 80px;
 }
