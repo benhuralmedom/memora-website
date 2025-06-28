@@ -3,6 +3,7 @@
 import type { NextPage } from "next";
 import styles from "./hem.module.css";
 import Spline from '@splinetool/react-spline';
+import KeyFeatures from "../components/KeyFeatures";
 
 const Hem: NextPage = () => {
   return (
@@ -31,44 +32,7 @@ const Hem: NextPage = () => {
           Memora gives that time back. Faster decisions. Faster onboarding.
       </div>
       <div className={styles.sFungerarDet}>Key Features</div>
-      <div className={styles.featuresSection}>
-        <div className={styles.featureItem}>
-          <div>
-            <div className={styles.featureName}>AI-powered search & Q&A</div>
-            <div className={styles.featureDesc}>Ask in natural language, whether it&apos;s a quick lookup or a complex query. Fully tailored to your organization.</div>
-          </div>
-        </div>
-        <div className={styles.featuresSection}>
-          <div>
-            <div className={styles.featureName}>Source-backed answers</div>
-            <div className={styles.featureDesc}>Shows document references for every answer.</div>
-          </div>
-        </div>
-        <div className={styles.featuresSection}>
-          <div>
-            <div className={styles.featureName}>Seamless integrations </div>
-            <div className={styles.featureDesc}>Slack, Notion, Google Drive, Confluence, and more.</div>
-          </div>
-        </div>
-        <div className={styles.featuresSection}>
-          <div>
-            <div className={styles.featureName}>Real-time document indexing </div>
-            <div className={styles.featureDesc}>always up-to-date with your knowledge base.</div>
-          </div>
-        </div>
-        <div className={styles.featuresSection}>
-          <div>
-            <div className={styles.featureName}>Enterprise-grade security</div>
-            <div className={styles.featureDesc}>data encryption, access controls, privacy-first design.</div>
-          </div>
-        </div>
-        <div className={styles.featuresSection}>
-          <div>
-            <div className={styles.featureName}>Admin controls and analytics </div>
-            <div className={styles.featureDesc}>monitor usage, manage permissions, track insights.</div>
-          </div>
-        </div>
-      </div>
+      <KeyFeatures />
       <div className={styles.buttonContainer}>
         <div className={styles.component7}>
           <div className={styles.bokaDemo}>BOKA DEMO</div>

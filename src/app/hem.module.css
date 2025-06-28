@@ -547,33 +547,6 @@
   /* Optional: add padding or max-width if you want it not flush with the edge */
 }
 
-.featuresSection {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.featuresTitle {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2.5rem;
-}
-
-.featureItem {
-  margin-bottom: 2.5rem;
-}
-
-.featureName {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.featureDesc {
-  font-size: 1.15rem;
-  color: #444f5a;
-  margin-top: 0.5rem;
-}
-
 .hemChild,
 .hemItem,
 .hemChild8,
@@ -582,10 +555,3 @@
 .rectangleDiv {
   z-index: -1;
 }
-
-.featuresList, .featuresGrid {
-  position: relative;
-  z-index: 2;
-}
-
-

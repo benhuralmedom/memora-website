@@ -1,0 +1,29 @@
+.featuresList {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.featureRow {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.featureIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.featureName {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.featureDesc {
+  font-size: 1.15rem;
+  color: #444f5a;
+  margin-top: 0.5rem;
+}
