@@ -138,9 +138,10 @@
 .allKunskapDirektContainer {
   position: absolute;
   top: 200px;
-  left: 455px;
+  left: 30%;
   font-size: 55px;
   color: var(--color-gray-100);
+  text-align: right;
 }
 .anslutDinaDokumentContainer,
 .vlkommenTillFramtiden {
@@ -149,14 +150,33 @@
   color: var(--color-gray-100);
 }
 .anslutDinaDokumentContainer {
-  top: 400px;
-  left: 580px;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-15%);
+  text-align: right;
 }
 .vlkommenTillFramtiden {
   top: 956px;
-  left: calc(50% - 267px);
-  display: inline-block;
-  width: 902px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+    margin: 0 180px;
+
+}
+.problemText,
+.solutionText {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.problemText {
+  text-align: left;
+}
+
+.solutionText {
+  text-align: right;
 }
 .hemChild8,
 .hemChild9,

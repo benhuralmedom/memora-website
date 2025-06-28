@@ -23,6 +23,7 @@ const Hem: NextPage = () => {
       <div className={styles.splineLeft}>
         <Spline scene="https://prod.spline.design/l6fJ31p8NzHsHjN2/scene.splinecode" />
       </div>
+      
       <div className={styles.hemChild} />
       <div className={styles.hemItem} />
       <div className={styles.ellipseDiv} />
@@ -38,10 +39,7 @@ const Hem: NextPage = () => {
           Instantly search, retrieve, and interact with internal data (like documents, wikis, databases) securely.
         </p>
       </div>
-      <div className={styles.vlkommenTillFramtiden}>
-        Välkommen till framtiden för intern kunskapshantering. Vår RAG-chatbot
-        söker snabbt igenom alla era databaser, dokument och systemen för att
-        leverera exakta svar i realtid.
+      <div className={styles.vlkommenTillFramtiden}> Save 30% of time. Faster decisions. Secure. Faster onboarding.
       </div>
       <div className={styles.rectangleDiv} />
       <div className={styles.hemChild8} />
@@ -58,7 +56,7 @@ const Hem: NextPage = () => {
       <div className={styles.ocrNlpPreprocessingOch}>
         OCR, NLP-preprocessing och vektorindex skapas sömlöst i bakgrunden.
       </div>
-      <div className={styles.sFungerarDet}>Så fungerar det</div>
+      <div className={styles.sFungerarDet}>Key Features</div>
       <Image
         className={styles.dRenderingCuteRobotIcon2}
         width={346.5}
