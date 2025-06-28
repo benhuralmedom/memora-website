@@ -12,19 +12,24 @@ interface Feature {
 const features: Feature[] = [
   {
     name: "AI-powered search & Q&A",
-    desc: "Ask in natural language, whether it's a quick lookup or a complex query. Text or speech. Fully tailored to your organization.",
+    desc: "Ask in natural language, whether a quick lookup or a complex query. Text or speech. Fully tailored to your organization.",
     icon: "/icon.svg",
   },
   {
-    name: "Source-backed answers",
-    desc: "Shows document references for every answer.",
+    name: "Connected to all your sources",
+    desc: "Pulls answers from your documents, wikis, databases, chat apps, and more - with references for every answer.",
     icon: "/file.svg",
   },
-  {
-    name: "Seamless integrations",
-    desc: "Slack, Notion, Google Drive, Confluence, and more.",
-    icon: "/globe.svg",
-  },
+    // {
+  //   name: "Source-backed answers",
+  //   desc: "Shows references for every answer.",
+  //   icon: "/file.svg",
+  // },
+  // {
+  //   name: "Seamless integrations",
+  //   desc: "Slack, Notion, Google Drive, Confluence, and more.",
+  //   icon: "/globe.svg",
+  // },
   {
     name: "Real-time updates",
     desc: "Always up-to-date with your knowledge base.",
@@ -32,7 +37,7 @@ const features: Feature[] = [
   },
   {
     name: "Enterprise-grade security",
-    desc: "Data encryption, access controls, privacy-first design.",
+    desc: "Data encrypted at rest and in transit. Deploy on-premises or in your private cloud.",
     icon: "/window.svg",
   },
   {

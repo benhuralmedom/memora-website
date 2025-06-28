@@ -21,7 +21,7 @@ const Hem: NextPage = () => {
       </b>
       <div className={styles.anslutDinaDokumentContainer}>
         <p className={styles.allKunskap}>
-          Memora is an AI that knows everything about your company - feeds you answers in real time.
+          Memora is an AI that knows everything about your company - and feeds you answers in real time.
         </p>
       </div>
       <div className={styles.vlkommenTillFramtiden}>

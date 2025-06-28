@@ -139,10 +139,10 @@
 .allKunskapDirektContainer {
   position: absolute;
   top: 200px;
-  left: 30%;
+  left: 5%;
   font-size: 55px;
   color: var(--color-gray-100);
-  text-align: right;
+  text-align: left;
 }
 .anslutDinaDokumentContainer,
 .vlkommenTillFramtiden {
@@ -152,9 +152,10 @@
 }
 .anslutDinaDokumentContainer {
   top: 350px;
-  left: 50%;
-  transform: translateX(-15%);
-  text-align: right;
+  left: 5%;
+  right: 50%;
+  transform: none;
+  text-align: left;
 }
 .vlkommenTillFramtiden {
   top: 956px;
@@ -486,9 +487,7 @@
   font-weight: 600;
 }
 .component7 {
-  position: absolute;
-  top: 576px;
-  left: 737px;
+  position: relative;
   border-radius: var(--br-100);
   background: radial-gradient(
     50% 50%at 50% 50%,
@@ -508,9 +507,7 @@
   font-weight: 600;
 }
 .component8 {
-  position: absolute;
-  top: 576px;
-  left: 1058px;
+  position: relative;
   border-radius: var(--br-100);
   border: 1px solid var(--color-darkslateblue);
   box-sizing: border-box;
@@ -522,7 +519,11 @@
 }
 
 .buttonContainer {
-  position: relative;
+  position: absolute;
+  top: 576px;
+  left: 5%;
+  display: flex;
+  gap: 20px;
   z-index: 1;
 }
 
@@ -532,7 +533,7 @@
   background-color: var(--color-white);
   height: auto;
   overflow: hidden;
-  text-align: right;
+  text-align: left;
   font-size: var(--font-size-36);
   color: var(--color-black);
   font-family: var(--font-inter);
@@ -540,11 +541,11 @@
 
 .splineLeft {
   display: flex;
-  justify-content: flex-start; /* align children to left */
-  align-items: flex-start;     /* align top, optional */
-  width: 50%;                /* take full width of parent */
-  margin-top: 180px;           /* or whatever spacing you want */
-  /* Optional: add padding or max-width if you want it not flush with the edge */
+  justify-content: flex-end;  /* move robot to the right */
+  align-items: flex-start;
+  width: 50%;
+  margin-top: 180px;
+  margin-left: auto;          /* position container on the right side */
 }
 
 .hemChild,
