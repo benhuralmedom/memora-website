@@ -223,7 +223,6 @@
   width: 481px;
 }
 .ocrNlpPreprocessingOch,
-.sFungerarDet,
 .stllFrgorOch {
   position: absolute;
   font-family: var(--font-josefin-sans);
@@ -236,11 +235,12 @@
   width: 489px;
 }
 .sFungerarDet {
-  top: 1852px;
-  left: 571px;
   font-size: 40px;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-gray-100);
+  text-align: center;
+  margin-top: 1000px;
+  margin-bottom: 20px;
 }
 .component2Child {
   position: absolute;
@@ -535,7 +535,7 @@
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  height: 4022px;
+  height: auto;
   overflow: hidden;
   text-align: right;
   font-size: var(--font-size-36);
@@ -552,3 +552,19 @@
   /* Optional: add padding or max-width if you want it not flush with the edge */
 }
 
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.featureBox {
+  background-color: var(--color-white);
+  border-radius: var(--br-30);
+  padding: 20px;
+  font-family: var(--font-josefin-sans);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
