@@ -16,20 +16,17 @@ const Hem: NextPage = () => {
       <div className={styles.hemItem} />
       <div className={styles.ellipseDiv} />
       <b className={styles.allKunskapDirektContainer}>
-        <p className={styles.allKunskap}>All of Your Companys Knowledge</p>
-        <p className={styles.allKunskap}>in One Interface</p>
+        <p className={styles.allKunskap}>All Company Knowledge.</p>
+        <p className={styles.allKunskap}>One Interface.</p>
       </b>
       <div className={styles.anslutDinaDokumentContainer}>
         <p className={styles.allKunskap}>
-          AI-powered knowledge assistant.
-        </p>
-        <p className={styles.allKunskap}>
-          Instantly search, retrieve, and interact with internal data (like documents, wikis, databases) securely.
+          Memora is an AI that knows everything about your company - feeds you answers in real time.
         </p>
       </div>
       <div className={styles.vlkommenTillFramtiden}>
           Teams waste 30% of their time searching for information.<br/>
-          Memora gives that time back. Faster decisions. Faster onboarding.
+          Memora gives that time back.
       </div>
       <div className={styles.sFungerarDet}>Key Features</div>
       <KeyFeatures />
