@@ -26,27 +26,48 @@ const Hem: NextPage = () => {
           Instantly search, retrieve, and interact with internal data (like documents, wikis, databases) securely.
         </p>
       </div>
-      <div className={styles.vlkommenTillFramtiden}> Save 30% of time. Faster decisions. Secure. Faster onboarding.
+      <div className={styles.vlkommenTillFramtiden}>
+          Teams waste 30% of their time searching for information.<br/>
+          Memora gives that time back. Faster decisions. Faster onboarding.
       </div>
       <div className={styles.sFungerarDet}>Key Features</div>
-      <div className={styles.featuresGrid}>
-        <div className={styles.featureBox}>
-          Ge chatboten tillgång till dina källor – databaser, dokument och
-          molnlagring.
+      <div className={styles.featuresSection}>
+        <div className={styles.featureItem}>
+          <div>
+            <div className={styles.featureName}>AI-powered search & Q&A</div>
+            <div className={styles.featureDesc}>Ask in natural language, whether it's a quick lookup or a complex query. Fully tailored to your organization.</div>
+          </div>
         </div>
-        <div className={styles.featureBox}>
-          Ställ frågor och få svar direkt i vår konversations-UI eller via er
-          befintliga app.
+        <div className={styles.featuresSection}>
+          <div>
+            <div className={styles.featureName}>Source-backed answers</div>
+            <div className={styles.featureDesc}>Shows document references for every answer.</div>
+          </div>
         </div>
-        <div className={styles.featureBox}>
-          OCR, NLP-preprocessing och vektorindex skapas sömlöst i bakgrunden.
+        <div className={styles.featuresSection}>
+          <div>
+            <div className={styles.featureName}>Seamless integrations </div>
+            <div className={styles.featureDesc}>Slack, Notion, Google Drive, Confluence, and more.</div>
+          </div>
         </div>
-        <div className={styles.featureBox}>
-          Samla feedback, analysera användning och träna om modeller för
-          ständig förbättring.
+        <div className={styles.featuresSection}>
+          <div>
+            <div className={styles.featureName}>Real-time document indexing </div>
+            <div className={styles.featureDesc}>always up-to-date with your knowledge base.</div>
+          </div>
         </div>
-        <div className={styles.featureBox}>Integrera enkelt med era system via API.</div>
-        <div className={styles.featureBox}>Anpassningsbar till er verksamhet och processer.</div>
+        <div className={styles.featuresSection}>
+          <div>
+            <div className={styles.featureName}>Enterprise-grade security</div>
+            <div className={styles.featureDesc}>data encryption, access controls, privacy-first design.</div>
+          </div>
+        </div>
+        <div className={styles.featuresSection}>
+          <div>
+            <div className={styles.featureName}>Admin controls and analytics </div>
+            <div className={styles.featureDesc}>monitor usage, manage permissions, track insights.</div>
+          </div>
+        </div>
       </div>
       <div className={styles.buttonContainer}>
         <div className={styles.component7}>

@@ -58,6 +58,7 @@
   background-color: var(--color-gray-200);
   width: 1506px;
   height: 2379px;
+  z-index: -1;
 }
 .hemInner {
   position: absolute;
@@ -162,21 +163,8 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-    margin: 0 180px;
-
-}
-.problemText,
-.solutionText {
-  flex: 1;
-  margin: 0 20px;
-}
-
-.problemText {
-  text-align: left;
-}
-
-.solutionText {
-  text-align: right;
+  margin: 0 110px;
+  font-size: 35px;
 }
 .hemChild8,
 .hemChild9,
@@ -241,6 +229,8 @@
   text-align: center;
   margin-top: 1000px;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 .component2Child {
   position: absolute;
@@ -461,6 +451,7 @@
   );
   width: 1440px;
   height: 350px;
+  z-index: -1; /* ensure background layer */
 }
 .hemChild12,
 .hemChild13,
@@ -530,6 +521,10 @@
   color: var(--color-darkslateblue);
 }
 
+.buttonContainer {
+  position: relative;
+  z-index: 1;
+}
 
 .hem {
   width: 100%;
@@ -552,19 +547,45 @@
   /* Optional: add padding or max-width if you want it not flush with the edge */
 }
 
-.featuresGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 40px auto;
-  text-align: center;
+.featuresSection {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.featureBox {
-  background-color: var(--color-white);
-  border-radius: var(--br-30);
-  padding: 20px;
-  font-family: var(--font-josefin-sans);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.featuresTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
 }
+
+.featureItem {
+  margin-bottom: 2.5rem;
+}
+
+.featureName {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.featureDesc {
+  font-size: 1.15rem;
+  color: #444f5a;
+  margin-top: 0.5rem;
+}
+
+.hemChild,
+.hemItem,
+.hemChild8,
+.hemChild9,
+.hemChild10,
+.rectangleDiv {
+  z-index: -1;
+}
+
+.featuresList, .featuresGrid {
+  position: relative;
+  z-index: 2;
+}
+
+
