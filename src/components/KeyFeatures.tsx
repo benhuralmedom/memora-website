@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { memo } from "react";
 import features, { type Feature } from "../data/features";
 import styles from "./KeyFeatures.module.css";
 
 
-export default function KeyFeatures() {
+function KeyFeatures() {
   return (
     <div className={styles.featuresList}>
       {features.map((feature: Feature, index) => (
@@ -26,3 +27,5 @@ export default function KeyFeatures() {
     </div>
   );
 }
+
+export default memo(KeyFeatures);
