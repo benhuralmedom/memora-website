@@ -43,13 +43,13 @@
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.1rem;
   flex-wrap: nowrap;
   overflow: hidden;
   border-radius: var(--br-100);
   background-color: var(--color-gray-100);
   width: fit-content;
-  padding: 3px 16px;
+  padding: 6px;
   flex-shrink: 0; /* Never shrinks */
 }
 
@@ -67,23 +67,11 @@
   padding-right: 40px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  border-radius: var(--br-100);
-  background-color: var(--color-gray-100);
-  width: fit-content;
-  padding: 3px 16px;
-}
-
 .navLink {
   font-size: 1.1rem;
   color: var(--color-white);
   text-decoration: none;
-  padding: 6px 16px;
+  padding: 6px 20px;
   border-radius: 100px;
   transition: background 0.2s;
 }
@@ -126,9 +114,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-gray-100);
+  width: 100vw;
+  height: 100vh;
+  background: #fff; /* White background */
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -143,13 +131,19 @@
   align-items: center;
 }
 
+.overlayHeader .logo {
+  color: #111; /* Force black logo in overlay */
+}
+
 .closeButton {
   background: none;
   border: none;
-  color: var(--color-white);
-  font-size: 2rem;
+  color: #222;         /* Make the close button dark */
+  font-size: 2.5rem;
+  font-weight: bold;
   cursor: pointer;
-  padding: 8px;
+  padding: 64px;
+  line-height: 1;
 }
 
 .overlayNav {
@@ -159,9 +153,10 @@
 }
 
 .overlayLink {
-  color: var(--color-white);
+  color: #222;          /* Make links dark for contrast on white */
   text-decoration: none;
   font-size: 1.5rem;
+  font-weight: 500;
   transition: color 0.2s ease;
 }
 
@@ -170,7 +165,6 @@
 }
 
 /* Progressive spacing reduction as screen size decreases */
-
 
 /* Tablets */
 @media (max-width: 1024px) {

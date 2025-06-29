@@ -108,3 +108,31 @@
   margin-top: 800px;
   margin-bottom: 80px;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .titleContainer{
+    font-size: 45px;
+  }
+  .subTitleContainer{
+    font-size: var(--font-size-28);
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px) {
+    .titleContainer{
+    font-size: 35px;
+  }
+  .subTitleContainer{
+    font-size: var(--font-size-18);  
+  }
+}
+
+/* Small phones - minimal padding, elements hug edges */
+@media (max-width: 480px) {
+}
+
+/* Very small screens - elements almost touch edges */
+@media (max-width: 360px) {
+}

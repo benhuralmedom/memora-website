@@ -19,10 +19,10 @@ const Hem: NextPage = () => {
           </p>
           <div className={styles.buttonContainer}>
             <div className={styles.component7}>
-              <div className={styles.bokaDemo}>BOKA DEMO</div>
+              <div className={styles.bokaDemo}>BOOK DEMO</div>
             </div>
             <div className={styles.component8}>
-              <div className={styles.seFunktioner}>SE FUNKTIONER</div>
+              <div className={styles.seFunktioner}>KEY FEATURES</div>
             </div>
           </div>
         </div>

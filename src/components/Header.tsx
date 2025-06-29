@@ -14,11 +14,12 @@ export default function Header() {
         <div className={styles.logo}>M E M O R A</div>
         <div className={styles.centerSpacer}></div>
         <nav className={styles.navbar}>
-          <Link href="/" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Hem</Link>
-          <Link href="/om-oss" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Om oss</Link>
-          <Link href="/kontakt" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Kontakt</Link>
-          <Link href="/priser" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Priser</Link>
-          <Link href="/funktioner" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Funktioner</Link>
+          <Link href="/" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Home</Link>
+          <Link href="/funktioner" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Key features</Link>
+          <Link href="/funktioner" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>How it works</Link>
+          <Link href="/om-oss" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>About us</Link>
+          <Link href="/kontakt" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Contact</Link>
+          {/* <Link href="/priser" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Priser</Link> */}
         </nav>
         <div className={styles.centerSpacer}></div>
         <div className={styles.rightArea}>
@@ -44,7 +45,7 @@ export default function Header() {
               className={styles.closeButton}
               onClick={closeMenu}
             >
-              ×
+              x
             </button>
           </div>
           <nav className={styles.overlayNav}>
