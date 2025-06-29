@@ -2,27 +2,69 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 8% 0 8%;
-  gap: 20px;
+  /* Minimal base padding */
+  padding: 48px 0 16px 0;
   position: relative;
   font-family: var(--font-josefin-sans);
+  /* Smooth transition for all changes */
+  transition: all 0.3s ease;
+}
+
+/* Spacer containers that shrink first */
+.leftSpacer {
+  /* Large initial width that shrinks first */
+  flex-basis: 60px;
+  flex-shrink: 6; /* Shrinks 3x faster than other elements */
+  flex-grow: 0;
+}
+
+.rightSpacer {
+  /* Large initial width that shrinks first */
+  flex-basis: 60px;
+  flex-shrink: 6; /* Shrinks 3x faster than other elements */
+  flex-grow: 0;
+}
+
+.centerSpacer {
+  /* Fixed spacing between logo-nav and nav-right */
+  flex-basis: 120px;
+  flex-shrink: 1; /* Normal shrink rate */
+  flex-grow: 0;
 }
 
 .logo {
   font-weight: bold;
   font-size: 24px;
-  flex-shrink: 0;
-  padding: 24px 0 16px 0;
+  padding-left: 40px;
+  flex-shrink: 0; /* Never shrinks */
   color: #2c3547;
-  justify-content: flex-end;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  border-radius: var(--br-100);
+  background-color: var(--color-gray-100);
+  width: fit-content;
+  padding: 3px 16px;
+  flex-shrink: 0; /* Never shrinks */
 }
 
 .rightArea {
-  min-width: 180px; /* or as needed */
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  /* Add spacing, e.g., margin-left: 20px; if needed */
+  gap: 1rem;
+  flex-shrink: 0; /* Never shrinks */
+}
+
+.rightText {
+  font-weight: bold;
+  font-size: 24px;
+  color: #2c3547;
+  padding-right: 40px;
 }
 
 .navbar {
@@ -45,6 +87,7 @@
   border-radius: 100px;
   transition: background 0.2s;
 }
+
 .navItem:hover {
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -62,6 +105,12 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding: 8px;
+  padding-right: 40px;
+}
+
+.hideHamburger {
+  display: none;
 }
 
 .hamburger span {
@@ -70,30 +119,144 @@
   height: 3px;
   background: #333;
   border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 1224px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    gap: 1rem;
-    padding: 16px;
-    background-color: var(--color-gray-100);
-    border-radius: 0 0 var(--br-10) var(--br-10);
-    z-index: 100; /* so it overlays the content */
+.overlayMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1.5rem;
+  gap: 2rem;
+  z-index: 1000;
+}
+
+.overlayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.overlayNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.overlayLink {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.overlayLink:hover {
+  color: #5385d7;
+}
+
+/* Progressive spacing reduction as screen size decreases */
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .headerWrapper {
+    padding: 36px 0 16px 0;
+    justify-content: space-between;
   }
-  .navbarOpen {
-    display: flex;
+  
+  .leftSpacer,
+  .rightSpacer {
+    flex-basis: 0px; /* Reduced from 40px */
+  }
+  
+  .navbar{
+    display: none;
   }
   .hamburger {
     display: flex;
   }
+  
+  .rightText {
+    display: none;
+  }
+  
+  .centerSpacer {
+    display: none;
+  }
+
+  .leftSpacer, .rightSpacer{
+    display: none;
+  }
 }
 
+/* Large phones */
+@media (max-width: 768px) {
+  .headerWrapper {
+    padding: 24px 0 16px 0;
+  }
+  
+  
+  .leftSpacer,
+  .rightSpacer {
+    flex-basis: 12px; /* Reduced from 20px */
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+}
 
+/* Small phones - minimal padding, elements hug edges */
+@media (max-width: 480px) {
+  .headerWrapper {
+    padding: 16px 0 12px 0;
+  }
+  
+  .leftSpacer,
+  .rightSpacer {
+    flex-basis: 8px; /* Reduced from 10px */
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+  
+  .hamburger {
+    padding: 4px;
+  }
+  
+  .centerSpacer {
+    flex-basis: 10px;
+  }
+}
 
-
+/* Very small screens - elements almost touch edges */
+@media (max-width: 360px) {
+  .headerWrapper {
+    padding: 12px 0 12px 0;
+  }
+  
+  .leftSpacer,
+  .rightSpacer {
+    flex-basis: 5px;
+  }
+  
+  .centerSpacer {
+    flex-basis: 5px;
+  }
+}
