@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 32px 0 32px;
+  padding: 24px 8% 0 8%;
   gap: 20px;
   position: relative;
   font-family: var(--font-josefin-sans);
@@ -12,12 +12,13 @@
   font-weight: bold;
   font-size: 24px;
   flex-shrink: 0;
-  padding: 24px 0 16px 80px;
+  padding: 24px 0 16px 0;
   color: #2c3547;
+  justify-content: flex-end;
 }
 
 .rightArea {
-  min-width: 200px; /* or as needed */
+  min-width: 180px; /* or as needed */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -28,7 +29,8 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
   border-radius: var(--br-100);
   background-color: var(--color-gray-100);
   width: fit-content;
@@ -69,4 +71,29 @@
   background: #333;
   border-radius: 2px;
 }
+
+@media (max-width: 1224px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    gap: 1rem;
+    padding: 16px;
+    background-color: var(--color-gray-100);
+    border-radius: 0 0 var(--br-10) var(--br-10);
+    z-index: 100; /* so it overlays the content */
+  }
+  .navbarOpen {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
 
