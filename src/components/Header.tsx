@@ -1,30 +1,24 @@
 "use client";
-
 import Link from "next/link";
 import styles from "./Header.module.css";
+import { useState } from "react";
 
 export default function Header() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
-    <>
-      <b className={styles.mEM}>{`M E M O R A `}</b>
-      <div className={styles.component2}>
-        <div className={styles.component2Child} />
-        <div className={`${styles.component21} ${styles.navItem}`}>
-          <Link href="/" className={`${styles.omOss} ${styles.navLink}`}>Hem</Link>
-        </div>
-        <div className={`${styles.component3} ${styles.navItem}`}>
-          <Link href="/om-oss" className={`${styles.omOss} ${styles.navLink}`}>Om oss</Link>
-        </div>
-        <div className={`${styles.component4} ${styles.navItem}`}>
-          <Link href="/kontakt" className={`${styles.omOss} ${styles.navLink}`}>Kontakt</Link>
-        </div>
-        <div className={`${styles.component5} ${styles.navItem}`}>
-          <Link href="/priser" className={`${styles.omOss} ${styles.navLink}`}>Priser</Link>
-        </div>
-        <div className={`${styles.component1} ${styles.navItem}`}>
-          <Link href="/funktioner" className={`${styles.omOss} ${styles.navLink}`}>Funktioner</Link>
-        </div>
+    <header className={styles.headerWrapper}>
+      <div className={styles.logo}>M E M O R A</div>
+      <nav className={styles.navbar}>
+        <Link href="/" className={`${styles.navLink} ${styles.navItem}`}>Hem</Link>
+        <Link href="/om-oss" className={`${styles.navLink} ${styles.navItem}`}>Om oss</Link>
+        <Link href="/kontakt" className={`${styles.navLink} ${styles.navItem}`}>Kontakt</Link>
+        <Link href="/priser" className={`${styles.navLink} ${styles.navItem}`}>Priser</Link>
+        <Link href="/funktioner" className={`${styles.navLink} ${styles.navItem}`}>Funktioner</Link>
+      </nav>
+      <div className={styles.rightArea}>
+        {/* Whatever you want on the top right (profile, icon, etc.) */}
       </div>
-    </>
+    </header>
   );
 }

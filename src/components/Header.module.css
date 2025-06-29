@@ -1,114 +1,48 @@
-.mEM {
-  position: absolute;
-  font-family: var(--font-josefin-sans);
-  top: 57px;
-  left: 111px;
-  font-size: 24px;
-  text-align: left;
-  z-index: 1000;
-}
-
-.component2Child {
-  position: absolute;
-  top: 4px;
-  left: 13px;
-  border-radius: var(--br-100);
-  width: 89px;
-  height: 35px;
-  overflow: hidden;
-}
-
-.component21 {
-  position: absolute;
-  top: 10px;
-  left: 37px;
-  width: 41px;
-  height: 22px;
-}
-
-.omOss {
+.headerWrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px 0 32px;
+  gap: 20px;
+  position: relative;
+  font-family: var(--font-josefin-sans);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  flex-shrink: 0;
+  padding: 24px 0 16px 80px;
+  color: #2c3547;
+}
+
+.rightArea {
+  min-width: 200px; /* or as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Add spacing, e.g., margin-left: 20px; if needed */
+}
+
+.navbar {
+  display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-weight: 600;
-  color: var(--color-white);
-  text-decoration: none;
-}
-
-.component1,
-.component3,
-.component4,
-.component5 {
-  position: absolute;
-  top: 10px;
-  left: 146px;
-  width: 66px;
-  height: 22px;
-}
-
-.component1,
-.component4,
-.component5 {
-  left: 283px;
-  width: 68px;
-}
-
-.component1,
-.component5 {
-  left: 423px;
-  width: 52px;
-}
-
-.component1 {
-  left: 544px;
-  width: 94px;
-}
-
-/* Fixed navigation bar positioning */
-.component2 {
-  position: absolute;
-  top: 47px;
-  left: calc(50% - 338px);
+  gap: 2rem;
+  flex-wrap: wrap;
   border-radius: var(--br-100);
   background-color: var(--color-gray-100);
-  width: 676px;
-  height: 43px;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-18);
+  width: fit-content;
+  padding: 3px 16px;
+}
+
+.navLink {
+  font-size: 1.1rem;
   color: var(--color-white);
-  display: flex; /* Use flexbox for better alignment */
-  align-items: center; /* Center items vertically */
-  justify-content: space-around; /* Distribute items evenly */
-  z-index: 1000;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 100px;
+  transition: background 0.2s;
 }
-
-.component21,
-.component3,
-.component4,
-.component5,
-.component1 {
-  position: relative; /* Change from absolute to relative */
-  top: auto; /* Reset top positioning */
-  left: auto; /* Reset left positioning */
-  width: auto; /* Let width be determined by content */
-  height: calc(100% - 10px); /* Leave vertical space for hover highlight */
-  margin: 5px 0; /* vertical spacing around each nav item */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navItem {
-  cursor: pointer;
-  transition: background 0.2s, padding 0.2s;
-  padding: 0 20px;
-  border-radius: var(--br-100);
-  overflow: hidden;
-}
-
 .navItem:hover {
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -119,12 +53,20 @@
   color: var(--color-white);
 }
 
-.navLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  color: inherit;
-  text-decoration: none;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
