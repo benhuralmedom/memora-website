@@ -13,10 +13,10 @@
 }
 .heroSection {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
-  justify-content: space-between;
-  padding: 8.5% 7.5% 20%;
+  justify-content: flex-start;
+  padding: 8.5% 0% 20% 7.5%;
   position: relative;
 }
 
@@ -30,6 +30,7 @@
   color: var(--color-gray-100);
   text-align: left;
   margin-bottom: 30px;
+  flex-grow: 2;
 }
 .subTitleContainer {
   font-size: var(--font-size-32);
@@ -87,10 +88,10 @@
 
 .splineLeft {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex: 1 1 400px;
-  margin-top: 0;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 1 1 600px;
+  max-width: 600px;
 }
 
 .benefit {
