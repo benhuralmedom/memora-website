@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Global styles */
+:root {
+  color-scheme: light dark;
+}
+
+/* Smooth scroll for in-page navigation and focus */
+html:focus-within {
+  scroll-behavior: smooth;
+}

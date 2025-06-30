@@ -1,72 +1,73 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./Header.module.css";
-import { useState } from "react";
 
 export default function Header() {
-  const [navOpen, setNavOpen] = useState(false);
-  const closeMenu = () => setNavOpen(false);
+  const pathname = usePathname();
+  const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/features", label: "Features" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    try {
+      const storedTheme = localStorage.getItem("theme");
+      if (storedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        setIsDark(true);
+      }
+    } catch (e) {}
+  }, []);
+
+  const toggleTheme = () => {
+    if (isDark) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDark(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDark(true);
+    }
+  };
 
   return (
-    <>
-      <header className={styles.headerWrapper}>
-        <div className={styles.leftSpacer}></div>
-        <div className={styles.logo}>M E M O R A</div>
-        <div className={styles.centerSpacer}></div>
-        <nav className={styles.navbar}>
-          <Link href="/" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Home</Link>
-          <Link href="/funktioner" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Key features</Link>
-          <Link href="/funktioner" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>How it works</Link>
-          <Link href="/om-oss" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>About us</Link>
-          <Link href="/kontakt" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Contact</Link>
-          {/* <Link href="/priser" className={`${styles.navLink} ${styles.navItem}`} onClick={closeMenu}>Priser</Link> */}
-        </nav>
-        <div className={styles.centerSpacer}></div>
-        <div className={styles.rightArea}>
-          <span className={styles.rightText}>M E M O R A</span>
-          <button
-            aria-label="Toggle navigation menu"
-            className={`${styles.hamburger} ${navOpen ? styles.hideHamburger : ""}`}
-            onClick={() => setNavOpen(true)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-        </div>
-        <div className={styles.rightSpacer}></div>
-      </header>
-      {navOpen && (
-        <div className={styles.overlayMenu}>
-          <div className={styles.overlayHeader}>
-            <div className={styles.logo}>M E M O R A</div>
-            <button
-              aria-label="Close navigation menu"
-              className={styles.closeButton}
-              onClick={closeMenu}
-            >
-              x
-            </button>
-          </div>
-          <nav className={styles.overlayNav}>
-            <Link href="/" className={styles.overlayLink} onClick={closeMenu}>
-              Hem
-            </Link>
-            <Link href="/om-oss" className={styles.overlayLink} onClick={closeMenu}>
-              Om oss
-            </Link>
-            <Link href="/kontakt" className={styles.overlayLink} onClick={closeMenu}>
-              Kontakt
-            </Link>
-            <Link href="/priser" className={styles.overlayLink} onClick={closeMenu}>
-              Priser
-            </Link>
-            <Link href="/funktioner" className={styles.overlayLink} onClick={closeMenu}>
-              Funktioner
-            </Link>
-          </nav>
-        </div>
-      )}
-    </>
+    <header className="flex items-center justify-between px-4 py-3 bg-neutral-light dark:bg-neutral-dark bg-opacity-90 dark:bg-opacity-90 backdrop-blur-md sticky top-0 z-50">
+      <Link href="/" className="text-xl font-bold text-primary dark:text-neutral-light mr-8">
+        Memora
+      </Link>
+      <nav className="flex-1">
+        <ul className="flex items-center gap-6">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className={
+                  `font-medium ${styles.navLink} ` +
+                  (pathname === item.href
+                    ? "text-primary dark:text-primary-light"
+                    : "text-neutral-dark dark:text-neutral-light")
+                }
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <button
+        onClick={toggleTheme}
+        aria-label="Toggle dark mode"
+        className={`ml-4 text-xl ${styles.themeToggle}`}
+      >
+        {isDark ? "🌞" : "🌙"}
+      </button>
+    </header>
   );
 }
