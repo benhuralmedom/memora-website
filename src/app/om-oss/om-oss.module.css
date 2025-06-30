@@ -32,7 +32,7 @@
   position: absolute;
   top: 501px;
   left: 71px;
-  font-size: 32px;
+  font-size: var(--font-size-32);
   color: var(--color-gray-100);
 }
 
