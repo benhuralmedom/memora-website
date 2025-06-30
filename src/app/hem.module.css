@@ -12,12 +12,15 @@
   font-family: var(--font-inter);
 }
 .heroSection {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 24px 0% 20% 7.5%;
+  display: flex;               /* make it a flex container */
+  flex-direction: column;      /* stack text/buttons vertically */
+  align-items: center;         /* center horizontally */
+  justify-content: center;     /* center vertically */
+  text-align: center;          /* ensure child text is centered */
+  padding: 24px;               /* uniform padding all around */
+  min-height: 100vh;           /* fill the screen height */
   position: relative;
+  padding-top: 160px;
 }
 
 .textContainer {
@@ -28,21 +31,22 @@
 .titleContainer {
   font-size: 55px;
   color: var(--color-gray-100);
-  text-align: left;
+  text-align: center;
   margin-bottom: 30px;
   flex-grow: 2;
 }
 .subTitleContainer {
   font-size: var(--font-size-32);
   color: var(--color-gray-100);
-  text-align: left;
+  text-align: center;
   margin-bottom: 60px;
 }
 
 .buttonContainer {
   display: flex;
   gap: 20px;
-  margin-top: 100px;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
 .component7 {

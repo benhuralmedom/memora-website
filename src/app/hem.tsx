@@ -2,7 +2,6 @@
 
 import type { NextPage } from "next";
 import styles from "./hem.module.css";
-import Spline from '@splinetool/react-spline';
 import KeyFeatures from "../components/KeyFeatures";
 
 const Hem: NextPage = () => {
@@ -25,9 +24,6 @@ const Hem: NextPage = () => {
               <div className={styles.seFunktioner}>KEY FEATURES</div>
             </div>
           </div>
-        </div>
-        <div className={styles.splineLeft}>
-          <Spline scene="https://prod.spline.design/l6fJ31p8NzHsHjN2/scene.splinecode" />
         </div>
       </section>
       <div className={styles.benefit}>
